@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBETU Coffee</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#cart">Cart</a>
+  </nav>
+
+  <!-- Homepage -->
+  <section class="hero" id="home">
+    <h1>WELCOME TO OBETU COFFEE</h1>
+    <p>Fresh Coffee Everyday ☕</p>
+
+    <a href="#menu">
+      <button>Order Now</button>
+    </a>
+  </section>
+
+ <!-- Menu -->
+<section class="menu" id="menu">
+
+  <h1>Menu Drink and Menu Cake</h1>
+
+ 
+<!-- Menu Category -->
+  <div class="menu-buttons">
+    <button onclick="showMenu('coffee')">COFFEE AND TEA</button>
+    <button onclick="showMenu('cake')">CAKE</button>
+  </div>
+
+
+   <!-- Coffee -->
+  <div class="cards menu-category" id="coffee">
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/f2/c0/7b/f2c07bf3e601e8be97a040049a672fe1.jpg">
+      <h2>Espresso</h2>
+      <p>$1.25</p>
+      <button onclick="addToCart('Espresso',1.25)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/03/3e/be/033ebe2b2bdc2b97ab77b9f4de5dbfdf.jpg">
+      <h2>Ice Latte</h2>
+      <p>$1.25</p>
+      <button onclick="addToCart('Ice Latte',1.25)">Buy</button>
+    </div>
+
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/af/04/51/af0451e992ee3fd74d69a6b4d123beac.jpg">
+      <h2>Marie Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Ice Latte',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/43/07/4a/43074a1cc274dd0246adf20cb58bc9b8.jpg">
+      <h2>Cappuccino</h2>
+      <p>$1.25</p>
+      <button onclick="addToCart('Cappuccino',1.25)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/fc/e8/80/fce8800e84ba5ac54612b4e009d4cd82.jpg">
+      <h2>Ice coffee</h2>
+      <p>$1.25</p>
+      <button onclick="addToCart('Ice Coffee',1.25)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/10/61/1e/10611e74571072c943a54165bcda56f4.jpg">
+      <h2>Ice Mocha Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Ice Mocha Latte',1.50)">Buy</button>
+    </div>
+
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/f5/92/9b/f5929bf83b412853c21dde9f382b2c9f.jpg">
+      <h2>Cinnamon Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Cinnamon Latte',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ab/50/ad/ab50ad22349ce149ecabfe7d8aa1db91.jpg">
+      <h2>Caramel Macchiato</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Caramel Macchiato',1.50)">Buy</button>
+    </div>
+
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/91/c9/c5/91c9c5333f4f2e2fe4297e9188eaca07.jpg">
+      <h2>Biscoff Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Biscoff Latte',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/1a/48/35/1a48358815da163a0d0903cc8c6ee115.jpg">
+      <h2>Banana Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Banana Latte',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/d6/3c/66/d63c66d5635e9f98ae9af73b19d89304.jpg">
+      <h2>Creamy Caramel</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Creamy Caramel',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/03/57/81/03578189185144e6fedb08d201fb339d.jpg">
+      <h2>Macha Latte</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Macha Latte',1.50)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/a6/84/26/a68426de5fab69a361e60239375a28d3.jpg">
+      <h2>Macha StrawBerry</h2>
+      <p>$1.50</p>
+      <button onclick="addToCart('Macha StrawBerry',1.50)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/c9/77/26/c97726738c06703f097f1d1e64486f62.jpg">
+      <h2>StrawBerry Latte</h2>
+      <p>$1.70</p>
+      <button onclick="addToCart('Straw Berry Latte',1.70)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/12/f3/df/12f3df5f0fa26740f4e49a0be7d3766e.jpg">
+      <h2>StrawBerry Choco Latte</h2>
+      <p>$2.25</p>
+      <button onclick="addToCart('StrawBerry Choco Latte',2.25)">Buy</button>
+    </div> 
+
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/4f/f2/4e/4ff24ed0e93778f3c34637ac4e3d19fc.jpg">
+      <h2>Taro Milk Latte</h2>
+      <p>$1.70</p>
+      <button onclick="addToCart('Taro Milk Latte',1.70)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/b8/62/4d/b8624de7eaa9401e4cb223053d8b2d42.jpg">
+      <h2>Boba Caramel Tea</h2>
+      <p>$2.25</p>
+      <button onclick="addToCart('Boba Caramel Tea',2.25)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/0f/a1/9b/0fa19ba65afc564cbe26561a9341f1ef.jpg">
+      <h2>Frash Bluberry</h2>
+      <p>$2.00</p>
+      <button onclick="addToCart('Frash Bluberry',2.00)">Buy</button>
+    </div> 
+
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/9c/57/8f/9c578fb1bdb3fc7158466e78b8fe58be.jpg">
+      <h2>Mengo Iced Drink</h2>
+      <p>$1.70</p>
+      <button onclick="addToCart('Mengo Iced Drink',1.70)">Buy</button>
+    </div> 
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/f2/6a/6d/f26a6d6fd051825579f9b7b101bb9a2d.jpg">
+      <h2>Avocado Smoothie</h2>
+      <p>$1.70</p>
+      <button onclick="addToCart('Avocado Smoothie',1.70)">Buy</button>
+    </div> 
+
+
+ </div> <!-- CLOSE COFFEE -->
+
+<!-- CAKE -->
+<div id="cake" class="cards menu-category">
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/37/45/ad/3745ade2ac868dd8e6ed8ffff94fc6c8.jpg">
+    <h2>Macha Cake</h2>
+    <p>$2.00</p>
+    <button onclick="addToCart('Macha Cake',2.00)">Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/ff/0a/25/ff0a25eb860f0cbc79fdafee8d3c19bb.jpg">
+    <h2>CUP CAKE</h2>
+    <p>$2.00</p>
+    <button onclick="addToCart('CUP CAKE',2.00)">Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/57/8f/b5/578fb5e5ad757b5824c554de00a93f5e.jpg">
+    <h2>Mocha Cake</h2>
+    <p>$2.00</p>
+    <button onclick="addToCart('Mocha Cake',2.00)">Buy</button>
+    </div>
+
+ <div class="card">
+    <img src="https://i.pinimg.com/1200x/5d/f6/cc/5df6cc35ae2c196b1e33801d4a67a684.jpg">
+    <h2>croissant strawberry</h2>
+    <p>$1.50</p>
+    <button onclick="addToCart('croissant strawberry',1.50)">Buy</button>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/1200x/cf/9b/af/cf9bafa8f904bb4c2aacf06cebf46331.jpg">
+    <h2>chocolate Almond Croissant</h2>
+    <p>$1.70</p>
+    <button onclick="addToCart('chocolate Almond Croissant',1.70)">Buy</button>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/736x/4c/f4/a8/4cf4a82b15f9c4c7008b80ae92abaf45.jpg">
+    <h2>Pictachio Croissant</h2>
+    <p>$1.70</p>
+    <button onclick="addToCart('Pistachio Croissant',1.70)">Buy</button>
+    </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/33/e7/72/33e77274e89e68e78753f0b2824a7f22.jpg">
+    <h2>Caramel Doughnut</h2>
+    <p>$1.70</p>
+    <button onclick="addToCart('Caramel Doughnut',1.70)">Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/90/43/e5/9043e5460f6d4edd43691963db682440.jpg">
+    <h2>chocolate Doughnut</h2>
+    <p>$1.70</p>
+    <button onclick="addToCart('chocolate Doughnut',1.70)">Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/1200x/3e/79/02/3e7902c577a782c0f551cb97ee441167.jpg">
+    <h2>Crone Waffle</h2>
+    <p>$1.80</p>
+    <button onclick="addToCart('Crone Waffle',1.80)">buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/dc/0f/4c/dc0f4ca4cf4eff36f0531717ec7688dc.jpg">
+    <h2>chocolate Waffle</h2>
+    <p>$1.80</p>
+    <button onclick="addToCart('Ckocolate Waffle',1.80)">buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/f4/17/67/f41767370065ce29228af37a933675d1.jpg">
+    <h2>Hot Dog</h2>
+    <p>$1.50</p>
+    <button onclick="addToCart('Hot Dog',1.50)">buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/86/79/09/8679097e1a614583347885fc171ca45d.jpg">
+    <h2>Cookies </h2>
+    <p>$1.00</p>
+    <button onclick="addToCart('Cookies',1.00)">buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/2f/6c/df/2f6cdfe409c0652b82c3e5e821062063.jpg">
+    <h2> Sandwich </h2>
+    <p>$1.25</p>
+    <button onclick="addToCart('Sandwich',1.25)">buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/d9/3c/9b/d93c9b2bc33f0137a4bdbaf97f3bcf00.jpg">
+    <h2> Burger </h2>
+    <p>$1.25</p>
+    <button onclick="addToCart('Burger',1.25)">buy</button>
+  </div>
+
+   <div class="card">
+    <img src="https://i.pinimg.com/736x/cb/0c/e2/cb0ce237fd8a40f6fb5d881f29f4fc55.jpg">
+    <h2> Itslisn Pizza </h2>
+    <p>$2.25</p>
+    <button onclick="addToCart('Itslisn Pizza',2.25)">buy</button>
+  </div>
+
+
+
+</div> <!-- CLOSE CAKE -->
+
+  <!-- Back Button -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="#home">
+      <button>⬅ Back Home</button>
+    </a>
+
+
+  </div>
+
+   </section>
+
+  <!-- Cart -->
+  <section id="cart">
+
+    <h2>🛒 Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <h3 id="total">Total: $0</h3>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 OBETU Coffee</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
